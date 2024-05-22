@@ -1,0 +1,1729 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" data-ember-extension="1">
+
+<head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+    <meta content="width=device-width" name="viewport" />
+    <style>
+        @font-face {
+            font-family: 'Intervogue';
+            src: url('https://cdn.shopify.com/s/files/1/0283/1338/7053/files/IntervogueRegular.woff?v=1660660715') format("woff");
+            font-weight: 400;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: "Silvana";
+            src: url('https://cdn.shopify.com/s/files/1/0283/1338/7053/files/Silvana-Regular.otf?v=1658828191') format("woff");
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: "Silvana";
+            src: url('https://cdn.shopify.com/s/files/1/0283/1338/7053/files/Silvana-RegularItalic.woff?v=1676905162') format("woff");
+            font-style: italic;
+            font-weight: 400;
+            font-display: swap;
+        }
+
+        body {
+            width: 100% !important;
+            min-width: 100%;
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        .ExternalClass {
+            width: 100%;
+        }
+
+        .ExternalClass {
+            line-height: 100%;
+        }
+
+        #backgroundTable {
+            margin: 0;
+            padding: 0;
+            width: 100% !important;
+            line-height: 100% !important;
+        }
+
+        img {
+            outline: none;
+            text-decoration: none;
+            -ms-interpolation-mode: bicubic;
+            width: auto;
+            max-width: 100%;
+            float: left;
+            clear: both;
+            display: block;
+        }
+
+        body {
+            color: #2B2725;
+            font-family: 'Intervogue', 'Silvana';
+            font-weight: normal;
+            padding: 0;
+            margin: 0;
+            text-align: left;
+            line-height: 1.3;
+        }
+
+        body {
+            font-size: 14px;
+            line-height: 19px;
+        }
+
+        a:hover {
+            color: #2795b6 !important;
+        }
+
+        a:active {
+            color: #2795b6 !important;
+        }
+
+        a:visited {
+            color: #2ba6cb !important;
+        }
+
+        h1 a:active {
+            color: #2ba6cb !important;
+        }
+
+        h2 a:active {
+            color: #2ba6cb !important;
+        }
+
+        h3 a:active {
+            color: #2ba6cb !important;
+        }
+
+        h4 a:active {
+            color: #2ba6cb !important;
+        }
+
+        h5 a:active {
+            color: #2ba6cb !important;
+        }
+
+        h6 a:active {
+            color: #2ba6cb !important;
+        }
+
+        h1 a:visited {
+            color: #2ba6cb !important;
+        }
+
+        h2 a:visited {
+            color: #2ba6cb !important;
+        }
+
+        h3 a:visited {
+            color: #2ba6cb !important;
+        }
+
+        h4 a:visited {
+            color: #2ba6cb !important;
+        }
+
+        h5 a:visited {
+            color: #2ba6cb !important;
+        }
+
+        h6 a:visited {
+            color: #2ba6cb !important;
+        }
+
+        table.button:hover td {
+            background: #2795b6 !important;
+        }
+
+        table.button:visited td {
+            background: #2795b6 !important;
+        }
+
+        table.button:active td {
+            background: #2795b6 !important;
+        }
+
+        table.button:hover td a {
+            color: #ffffff !important;
+        }
+
+        table.button:visited td a {
+            color: #ffffff !important;
+        }
+
+        table.button:active td a {
+            color: #ffffff !important;
+        }
+
+        table.button:hover td {
+            background: #2795b6 !important;
+        }
+
+        table.tiny-button:hover td {
+            background: #2795b6 !important;
+        }
+
+        table.small-button:hover td {
+            background: #2795b6 !important;
+        }
+
+        table.medium-button:hover td {
+            background: #2795b6 !important;
+        }
+
+        table.large-button:hover td {
+            background: #2795b6 !important;
+        }
+
+        table.button:hover td a {
+            color: #ffffff !important;
+        }
+
+        table.button:active td a {
+            color: #ffffff !important;
+        }
+
+        table.button td a:visited {
+            color: #ffffff !important;
+        }
+
+        table.tiny-button:hover td a {
+            color: #ffffff !important;
+        }
+
+        table.tiny-button:active td a {
+            color: #ffffff !important;
+        }
+
+        table.tiny-button td a:visited {
+            color: #ffffff !important;
+        }
+
+        table.small-button:hover td a {
+            color: #ffffff !important;
+        }
+
+        table.small-button:active td a {
+            color: #ffffff !important;
+        }
+
+        table.small-button td a:visited {
+            color: #ffffff !important;
+        }
+
+        table.medium-button:hover td a {
+            color: #ffffff !important;
+        }
+
+        table.medium-button:active td a {
+            color: #ffffff !important;
+        }
+
+        table.medium-button td a:visited {
+            color: #ffffff !important;
+        }
+
+        table.large-button:hover td a {
+            color: #ffffff !important;
+        }
+
+        table.large-button:active td a {
+            color: #ffffff !important;
+        }
+
+        table.large-button td a:visited {
+            color: #ffffff !important;
+        }
+
+        table.secondary:hover td {
+            background: #d0d0d0 !important;
+            color: #555555;
+        }
+
+        table.secondary:hover td a {
+            color: #555555 !important;
+        }
+
+        table.secondary td a:visited {
+            color: #555555 !important;
+        }
+
+        table.secondary:active td a {
+            color: #555555 !important;
+        }
+
+        table.success:hover td {
+            background: #457a1a !important;
+        }
+
+        table.alert:hover td {
+            background: #970b0e !important;
+        }
+
+        body.outlook p {
+            display: inline !important;
+        }
+
+        body {
+            color: #707070;
+        }
+
+        img {
+            float: none;
+        }
+
+        @media only screen and (max-width: 600px) {
+            table[class="body"] img {
+                max-width: auto !important;
+                max-height: auto !important;
+            }
+
+            table[class="body"] center {
+                min-width: 0 !important;
+            }
+
+            table[class="body"] .container {
+                width: 95% !important;
+            }
+
+            table[class="body"] .row {
+                width: 100% !important;
+                display: block !important;
+            }
+
+            table[class="body"] .wrapper {
+                display: block !important;
+                padding-right: 0 !important;
+            }
+
+            table[class="body"] .columns {
+                table-layout: fixed !important;
+                float: none !important;
+                width: 100% !important;
+                padding-right: 0px !important;
+                padding-left: 0px !important;
+                display: block !important;
+            }
+
+            table[class="body"] .column {
+                table-layout: fixed !important;
+                float: none !important;
+                width: 100% !important;
+                padding-right: 0px !important;
+                padding-left: 0px !important;
+                display: block !important;
+            }
+
+            table[class="body"] .wrapper.first .columns {
+                display: table !important;
+            }
+
+            table[class="body"] .wrapper.first .column {
+                display: table !important;
+            }
+
+            /*table[class="body"] table.columns td {
+        width: 100% !important;
+      }*/
+            table[class="body"] table.column td {
+                width: 100% !important;
+            }
+
+            table[class="body"] .columns td.one {
+                width: 8.333333% !important;
+            }
+
+            table[class="body"] .column td.one {
+                width: 8.333333% !important;
+            }
+
+            table[class="body"] .columns td.two {
+                width: 16.666666% !important;
+            }
+
+            table[class="body"] .column td.two {
+                width: 16.666666% !important;
+            }
+
+            table[class="body"] .columns td.three {
+                width: 25% !important;
+            }
+
+            table[class="body"] .column td.three {
+                width: 25% !important;
+            }
+
+            table[class="body"] .columns td.four {
+                width: 33.333333% !important;
+            }
+
+            table[class="body"] .column td.four {
+                width: 33.333333% !important;
+            }
+
+            table[class="body"] .columns td.five {
+                width: 41.666666% !important;
+            }
+
+            table[class="body"] .column td.five {
+                width: 41.666666% !important;
+            }
+
+            table[class="body"] .columns td.six {
+                width: 50% !important;
+            }
+
+            table[class="body"] .column td.six {
+                width: 50% !important;
+            }
+
+            table[class="body"] .columns td.seven {
+                width: 58.333333% !important;
+            }
+
+            table[class="body"] .column td.seven {
+                width: 58.333333% !important;
+            }
+
+            table[class="body"] .columns td.eight {
+                width: 66.666666% !important;
+            }
+
+            table[class="body"] .column td.eight {
+                width: 66.666666% !important;
+            }
+
+            table[class="body"] .columns td.nine {
+                width: 75% !important;
+            }
+
+            table[class="body"] .column td.nine {
+                width: 75% !important;
+            }
+
+            table[class="body"] .columns td.ten {
+                width: 83.333333% !important;
+            }
+
+            table[class="body"] .column td.ten {
+                width: 83.333333% !important;
+            }
+
+            table[class="body"] .columns td.eleven {
+                width: 91.666666% !important;
+            }
+
+            table[class="body"] .column td.eleven {
+                width: 91.666666% !important;
+            }
+
+            table[class="body"] .columns td.twelve {
+                width: 100% !important;
+            }
+
+            table[class="body"] .column td.twelve {
+                width: 100% !important;
+            }
+
+            table[class="body"] td.offset-by-one {
+                padding-left: 0 !important;
+            }
+
+            table[class="body"] td.offset-by-two {
+                padding-left: 0 !important;
+            }
+
+            table[class="body"] td.offset-by-three {
+                padding-left: 0 !important;
+            }
+
+            table[class="body"] td.offset-by-four {
+                padding-left: 0 !important;
+            }
+
+            table[class="body"] td.offset-by-five {
+                padding-left: 0 !important;
+            }
+
+            table[class="body"] td.offset-by-six {
+                padding-left: 0 !important;
+            }
+
+            table[class="body"] td.offset-by-seven {
+                padding-left: 0 !important;
+            }
+
+            table[class="body"] td.offset-by-eight {
+                padding-left: 0 !important;
+            }
+
+            table[class="body"] td.offset-by-nine {
+                padding-left: 0 !important;
+            }
+
+            table[class="body"] td.offset-by-ten {
+                padding-left: 0 !important;
+            }
+
+            table[class="body"] td.offset-by-eleven {
+                padding-left: 0 !important;
+            }
+
+            table[class="body"] table.columns td.expander {
+                width: 1px !important;
+            }
+
+            table[class="body"] .right-text-pad {
+                padding-left: 10px !important;
+            }
+
+            table[class="body"] .text-pad-right {
+                padding-left: 10px !important;
+            }
+
+            table[class="body"] .left-text-pad {
+                padding-right: 10px !important;
+            }
+
+            table[class="body"] .text-pad-left {
+                padding-right: 10px !important;
+            }
+
+            table[class="body"] .hide-for-small {
+                display: none !important;
+            }
+
+            table[class="body"] .show-for-desktop {
+                display: none !important;
+            }
+
+            table[class="body"] .show-for-small {
+                display: block !important;
+                width: auto !important;
+                overflow: visible !important;
+            }
+
+            table[class="body"] .hide-for-desktop {
+                display: block !important;
+                width: auto !important;
+                overflow: visible !important;
+            }
+        }
+    </style>
+</head>
+
+<body style="width: 100% !important; min-width: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; color: #2B2725; font-family:  'Intervogue','Silvana'; font-weight: normal; text-align: left; line-height: 19px; font-size: 14px; margin: 0; padding: 0;">
+    <table class="body" style=" border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; height: 100%; width: 100%; color: #2B2725; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0;">
+        <tbody>
+            <tr style="vertical-align: top; padding: 0" align="center">
+                <td class="center" style=" word-break: break-word; -webkit-hyphens: none; -ms-hyphens: none; hyphens: none; border-collapse: collapse !important; color: #2B2725; font-family:  'Intervogue'; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0; " valign="top" align="center"> <center style="width: 100%;">
+                        <table class="container" style=" border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: inherit; max-width: 700px; margin: 0 auto; padding: 0; ">
+                            <tbody>
+                                <tr style="vertical-align: top; padding: 0" align="center">
+                                    <td style=" word-break: break-word; -webkit-hyphens: none; -ms-hyphens: none; hyphens: none; border-collapse: collapse !important; color: #2B2725; font-family:  'Intervogue'; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0; " valign="top" align="center">
+                                        <table class="row" style=" border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 100%; position: relative; display: block; padding: 0px; ">
+                                            <tbody>
+                                                <tr style="vertical-align: top; padding: 0" align="left">
+                                                    <td class="wrapper last" style=" word-break: break-word; -webkit-hyphens: none; -ms-hyphens: none; hyphens: none; border-collapse: collapse !important; position: relative; color: #2B2725; font-family:  'Intervogue'; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 10px 0px 0px; " valign="top" align="left">
+                                                        <table class="icons_block block-2" width="100%" border="0"
+                                                          cellpadding="0" cellspacing="0" role="presentation" style=" mso-table-lspace: 0pt; mso-table-rspace: 0pt; ">
+                                                            <tr>
+                                                                <td class="pad" style="  vertical-align: middle;  color: #2b2725;  font-family:  'Intervogue';  font-size: 19px;  text-align: center;  padding: 45px 0px 15px 0px;  ">
+                                                                    <table class="alignment" cellpadding="0"
+                                                                        cellspacing="0" role="presentation"
+                                                                        align="center" style=" mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 240px; ">
+                                                                        <tr>
+                                                                            <td style=" vertical-align: middle; text-align: center; padding: 5px;  ">
+                                                                                <a href="https://ninetypercent.com/" target="_self" style="text-decoration: none"><img class="icon" src="https://mcusercontent.com/98961a524d0501bca9aa0f0ec/images/46a4c0c8-c56f-e1bb-9aac-b78c8aa827a9.jpg" alt="Company Logo" height="" width="240px" align="center" style=" display: block; height: auto; margin: 0 auto; border: 0; width: 240px; " /></a>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                        <table class="twelve columns" style=" border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 700px; margin: 0 auto; padding: 0; ">
+                                                            <tbody>
+                                                                <tr style="vertical-align: top; padding: 0"  align="left">
+                                                                    <td style=" word-break: keep-all; -webkit-hyphens: none; -ms-hyphens: none; hyphens: none; border-collapse: collapse !important; color: #2B2725; font-family:  'Intervogue'; font-weight: 400; line-height: 19px; font-size: 14px; margin: 0; " valign="top" align="left">
+                                                                        <div class="section"
+                                                                            style="margin: 15px auto; padding-top: 15px; padding-bottom: 18px; max-width: 440px; border-bottom: 1px solid rgba(43, 39, 37, 0.3);">
+                                                                            <p style="   color: #2B2725;   font-family:  'Silvana';   font-weight: 400;   line-height: 34px;   font-size: 21px;   margin: 0 0 0px;   padding: 0;   " align="center"> Order Confirmation </p>
+                                                                        </div>
+                                                                        <div class="section"
+                                                                            style="margin: 16px 0; width: 275px; margin: auto;">
+                                                                            <p style="  color: #2B2725;  font-family:  'Intervogue';  font-weight: 400;  line-height: 16px;  font-size: 12px;  width: 275px;  margin: 0 auto 17px;  " align="center"> Hi {{ customer.first_name}} {{customer.last_name}} </p>
+                                                                            <p style="  color: #2B2725;  font-family:  'Intervogue';  font-weight: 400;  line-height: 16px;  font-size: 12px;  width: 275px;  margin: 0 auto 17px;  " align="center">
+                                                                                Thank you for your order! Your pieces
+                                                                                are being prepared and will be on their
+                                                                                way to you soon. </p>
+
+                                                                            <p style=" color: #2B2725; font-family:  'Intervogue'; font-weight: 400; line-height: 16px; font-size: 12px; width: 275px; margin: 0 auto 17px; " align="center">
+                                                                                Once your package has been sent, we will
+                                                                                send another email containing your
+                                                                                shipping details. Below are your order
+                                                                                details. Any other questions, please
+                                                                                email us at <a href="mailto:hello@ninetypercent.com" style="color: #2B2725"> hello@ninetypercent.com</a></p>
+
+                                                                            <p style="  color: #2B2725;  font-family:  'Intervogue';  font-weight: 400;  line-height: 16px;  font-size: 12px;  width: 275px;  margin: 0 auto 17px;  " align="center">If you have purchased a pre-order item, please take note of
+                                                                                the dispatch timeframe on our website.
+                                                                                This will indicate when you can expect
+                                                                                your shipping details in the near
+                                                                                future.
+                                                                            </p>
+
+
+                                                                        </div>
+                                                                        <div class="section"
+                                                                            style="margin: 15px 0; padding: 15px 0">
+                                                                            <div>
+                                                                                <p class="text-dark order-confirm-summary"
+                                                                                    style=" color: #2B2725; font-family:  'Silvana'; font-style: italic; font-weight: 400; line-height: 34px; font-size: 16px; margin: 0 0 10px; padding: 9px 0 0 0px; " align="left"> Order summary </p>
+                                                                                <div class="border-top border-bottom order-confirm-number"
+                                                                                    style=" border-bottom: 1px solid rgba(43, 39, 37, 0.3); margin-bottom: 20px; padding: 10px 0px 10px 0px; text-transform: uppercase; color: #2B2725; font-family:  'Intervogue'; font-style: normal; font-weight: 400; font-size: 12px; line-height: 15px; letter-spacing: 0.02em; "> order number: {{ order_name }} <span class="order-confirm-placed-on-date"
+                                                                                        style="float: right">date: {{created_at }}</span>
+                                                                                </div>
+                                                                                <table class="padded-table" style="   border-spacing: 0;   border-collapse: collapse;   vertical-align: top;   text-align: left;   width: 100%;   padding: 0;    ">
+                                                                                    <tbody>
+                                                                                        <tr class="border-top border-bottom"
+                                                                                            style=" padding: 0; " align="left">
+                                                                                            <th style="padding: 0px">
+                                                                                            </th>
+                                                                                            <th style="padding: 0px">
+                                                                                            </th>
+                                                                                            <th style="padding: 0px">
+                                                                                            </th>
+                                                                                            <th style="padding: 0px">
+                                                                                            </th>
+                                                                                            <th style="padding: 0px">
+                                                                                            </th>
+                                                                                            <th style="padding: 0px">
+                                                                                            </th>
+                                                                                        </tr> 
+                                                                                        {% for line in  subtotal_line_items %} 
+                                                                                        <tr style="vertical-align: top; padding: 0" align="left">
+                                                                                            <td style="  word-break: break-word;  -webkit-hyphens: none;  -ms-hyphens: none;  hyphens: none;  border-collapse: collapse !important;  color: #2B2725;  font-family:  'Intervogue';  font-weight: 400;  line-height: 15px;  font-size: 12px;  margin: 0;  padding: 10px;  " valign="top" align="left"> 
+                                                                                        {% if line.image %}
+                                                                                                 <img alt="icon-graphics" class="concept-icon-mail__img" src="{{ line | img_url: 'compact_cropped' }}" style="    outline: none;    text-decoration: none;    -ms-interpolation-mode: bicubic;    width: 92px;    max-width: 100%;    clear: both;    display: block;    height: 113px;    margin-bottom: 15px;    text-align: center;    " align="none" /> 
+                                                                                         {% endif %}
+                                                                                            </td>
+                                                                                            <td style=" word-break: break-word; -webkit-hyphens: none; -ms-hyphens: none; hyphens: none; border-collapse: collapse !important; color: #2B2725; font-family:  'Intervogue'; font-weight: 400; line-height: 15px; font-size: 12px; letter-spacing: 0.02em; margin: 0; padding: 10px; " valign="top" align="left"> 
+                                                                                                {% if line.product.title %} 
+                                                                                                {% assign line_title = line.product.title %} {% else %} 
+                                                                                                {% assign line_title = line.title%} 
+                                                                                                {% endif %} 
+                                                                                                {% if line.quantity <
+                                                                                                    line.quantity %} {%
+                                                                                                    capture line_display
+                                                                                                    %} {{ line.quantity
+                                                                                                    }} of {{
+                                                                                                    line.quantity }} {%
+                                                                                                    endcapture %} {%
+                                                                                                    else %} {% assign
+                                                                                                    line_display=line.quantity
+                                                                                                    %} {% endif %} <p
+                                                                                                    style="
+                                                      color: #2B2725;
+                                                      font-family:  'Intervogue';
+                                                      font-weight: 400;
+                                                      line-height: 15px;
+                                                      font-size: 12px;
+                                                      margin: 0 0 10px;
+                                                      letter-spacing: 0.02em;
+                                                      padding: 0;
+                                                    " align="left"> {{ line_title }}
+                                                                                                    </p> {% if
+                                                                                                    line.variant.title
+                                                                                                    != 'Default Title'
+                                                                                                    %} <p style="
+                                                      color: #2B2725;
+                                                      font-family:  'Intervogue';
+                                                      font-weight: 400;
+                                                      line-height: 15px;
+                                                      font-size: 12px;
+                                                      letter-spacing: 0.02em;
+                                                      margin: 0 0 10px;
+                                                      padding: 0;
+                                                    " align="left"> {{ line.variant.title }}
+                                                                                                    </p> {% endif %}
+                                                                                            </td>
+                                                                                            <td style="
+                                                    word-break: break-word;
+                                                    -webkit-hyphens: none;
+                                                    -ms-hyphens: none;
+                                                    hyphens: none;
+                                                    border-collapse: collapse !important;
+                                                    color: #2B2725;
+                                                    font-family:  'Intervogue';
+                                                    font-weight: 400;
+                                                    line-height: 15px;
+                                                    font-size: 12px;
+                                                    letter-spacing: 0.02em;
+                                                    margin: 0;
+                                                    padding: 10px;
+                                                  " valign="top" align="left"><del class="order-list__item-original-price"></del>
+                                                                                            </td>
+                                                                                            <td style="
+                                                    word-break: break-word;
+                                                    -webkit-hyphens: none;
+                                                    -ms-hyphens: none;
+                                                    hyphens: none;
+                                                    border-collapse: collapse !important;
+                                                    color: #2B2725;
+                                                    font-family:  'Intervogue';
+                                                    font-weight: 400;
+                                                    line-height: 15px;
+                                                    font-size: 12px;
+                                                    letter-spacing: 0.02em;
+                                                    margin: 0;
+                                                    padding: 10px;
+                                                  " valign="top" align="left"></td>
+                                                                                            <td style="
+                                                    word-break: break-word;
+                                                    -webkit-hyphens: none;
+                                                    -ms-hyphens: none;
+                                                    hyphens: none;
+                                                    border-collapse: collapse !important;
+                                                    color: #2B2725;
+                                                    font-family:  'Intervogue';
+                                                    font-weight: 400;
+                                                    line-height: 15px;
+                                                    font-size: 12px;
+                                                    letter-spacing: 0.02em;
+                                                    margin: 0;
+                                                    padding: 10px;
+                                                  " valign="top" align="right"> {{ line_display }}
+                                                                                            </td>
+                                                                                            <td style="
+                                                    word-break: break-word;
+                                                    -webkit-hyphens: none;
+                                                    -ms-hyphens: none;
+                                                    hyphens: none;
+                                                    border-collapse: collapse !important;
+                                                    color: #2B2725;
+                                                    font-family:  'Intervogue';
+                                                    font-weight: 400;
+                                                    line-height: 15px;
+                                                    font-size: 12px;
+                                                    letter-spacing: 0.02em;
+                                                    margin: 0;
+                                                    padding: 10px;
+                                                  " valign="top" align="right"> {% if line.final_line_price > 0 %} {{
+                                                                                                line.final_line_price |
+                                                                                                money }} {% else %} Free
+                                                                                                {% endif %} </td>
+                                                                                        </tr> {% endfor %} <tr
+                                                                                            style="vertical-align: top; padding: 0"
+                                                                                            align="left">
+                                                                                            <td style="
+                                                    word-break: break-word;
+                                                    -webkit-hyphens: none;
+                                                    -ms-hyphens: none;
+                                                    hyphens: none;
+                                                    border-collapse: collapse !important;
+                                                    color: #2B2725;
+                                                    font-family:  'Intervogue';
+                                                    font-weight: 400;
+                                                    line-height: 15px;
+                                                    font-size: 12px;
+                                                    letter-spacing: 0.02em;
+                                                    margin: 0;
+                                                    padding: 6px;
+                                                  " valign="top" align="left"></td>
+                                                                                        </tr> {% if total_discounts > 0
+                                                                                        %} <tr
+                                                                                            class="row-compact border-top"
+                                                                                            style="
+                                                  vertical-align: top;
+                                                  border-top: 1px solid rgba(43, 39, 37, 0.3);;
+
+                                                  padding: 0;
+                                                " align="left">
+                                                                                            <td style="
+                                                    word-break: break-word;
+                                                    -webkit-hyphens: none;
+                                                    -ms-hyphens: none;
+                                                    hyphens: none;
+                                                    border-collapse: collapse !important;
+                                                    color: #2B2725;
+                                                    font-family:  'Intervogue';
+                                                    font-weight: 400;
+                                                    line-height: 15px;
+                                                    font-size: 12px;
+                                                    letter-spacing: 0.02em;
+                                                    margin: 0;
+                                                    padding: 10px;
+                                                  " valign="top" align="left"></td>
+                                                                                            <td style="
+                                                    word-break: break-word;
+                                                    -webkit-hyphens: none;
+                                                    -ms-hyphens: none;
+                                                    hyphens: none;
+                                                    border-collapse: collapse !important;
+                                                    color: #2B2725;
+                                                    font-family:  'Intervogue';
+                                                    font-weight: 400;
+                                                    line-height: 15px;
+                                                    font-size: 12px;
+                                                    letter-spacing: 0.02em;
+                                                    margin: 0;
+                                                    padding: 5px 10px;
+                                                  " valign="top" align="left"></td>
+                                                                                            <td class="text-bold" style="
+                                                    word-break: keep-all;
+                                                    -webkit-hyphens: none;
+                                                    -ms-hyphens: none;
+                                                    hyphens: none;
+                                                    border-collapse: collapse !important;
+                                                    color: #2B2725;
+                                                    font-family:  'Intervogue';
+                                                    font-weight: 400;
+                                                    line-height: 15px;
+                                                    font-size: 12px;
+                                                    letter-spacing: 0.02em;
+                                                    margin: 0;
+                                                    padding: 11px 10px 0px 10px;
+                                                    text-transform: uppercase;
+                                                  " valign="top" align="left"> Discount </td>
+                                                                                            <td style="
+                                                    word-break: break-word;
+                                                    -webkit-hyphens: none;
+                                                    -ms-hyphens: none;
+                                                    hyphens: none;
+                                                    border-collapse: collapse !important;
+                                                    color: #2B2725;
+                                                    font-family:  'Intervogue';
+                                                    font-weight: 400;
+                                                    line-height: 19px;
+                                                    font-size: 14px;
+                                                    margin: 0;
+                                                    padding: 5px 10px;
+                                                  " valign="top" align="left"></td>
+                                                                                            <td style="
+                                                    word-break: break-word;
+                                                    -webkit-hyphens: none;
+                                                    -ms-hyphens: none;
+                                                    hyphens: none;
+                                                    border-collapse: collapse !important;
+                                                    color: #2B2725;
+                                                    font-family:  'Intervogue';
+                                                    font-weight: normal;
+                                                    line-height: 19px;
+                                                    font-size: 14px;
+                                                    margin: 0;
+                                                    padding: 5px 10px;
+                                                  " valign="top" align="left"></td>
+
+                                                                                            <td style="
+                                                    word-break: keep-all;
+                                                    -webkit-hyphens: none;
+                                                    -ms-hyphens: none;
+                                                    hyphens: none;
+                                                    border-collapse: collapse !important;
+                                                    color: #2B2725;
+                                                    font-family:  'Intervogue';
+                                                    font-weight: 400;
+                                                    line-height: 15px;
+                                                    font-size: 12px;
+                                                    letter-spacing: 0.02em;
+                                                    margin: 0;
+                                                    padding: 11px 10px 0px 10px;
+                                                  " valign="top" align="right"> -{{ total_discounts | money }}
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr class="row-compact border-top"
+                                                                                            style="vertical-align: top; padding: 0"
+                                                                                            align="left">
+                                                                                            <td style="
+                                                    word-break: break-word;
+                                                    -webkit-hyphens: none;
+                                                    -ms-hyphens: none;
+                                                    hyphens: none;
+                                                    border-collapse: collapse !important;
+                                                    color: #2B2725;
+                                                    font-family:  'Intervogue';
+                                                    font-weight: normal;
+                                                    line-height: 19px;
+                                                    font-size: 14px;
+                                                    margin: 0;
+                                                    padding: 10px;
+                                                  " valign="top" align="left"></td>
+                                                                                            <td style="
+                                                    word-break: break-word;
+                                                    -webkit-hyphens: none;
+                                                    -ms-hyphens: none;
+                                                    hyphens: none;
+                                                    border-collapse: collapse !important;
+                                                    color: #2B2725;
+                                                    font-family:  'Intervogue';
+                                                    font-weight: normal;
+                                                    line-height: 19px;
+                                                    font-size: 14px;
+                                                    margin: 0;
+                                                    padding: 5px 10px;
+                                                  " valign="top" align="left"></td>
+
+                                                                                            <td class="text-bold" style="
+                                                    word-break: keep-all;
+                                                    -webkit-hyphens: none;
+                                                    -ms-hyphens: none;
+                                                    hyphens: none;
+                                                    border-collapse: collapse !important;
+                                                    color: #2B2725;
+                                                    font-family:  'Intervogue';
+                                                    font-weight: 400;
+                                                    line-height: 15px;
+                                                    font-size: 12px;
+                                                    letter-spacing: 0.02em;
+                                                    margin: 0;
+                                                    padding: 11px 10px 0px 10px;
+                                                    text-transform: uppercase;
+                                                  " valign="top" align="left"> Subtotal </td>
+                                                                                            <td style="
+                                                    word-break: break-word;
+                                                    -webkit-hyphens: none;
+                                                    -ms-hyphens: none;
+                                                    hyphens: none;
+                                                    border-collapse: collapse !important;
+                                                    color: #2B2725;
+                                                    font-family:  'Intervogue';
+                                                    font-weight: normal;
+                                                    line-height: 19px;
+                                                    font-size: 14px;
+                                                    margin: 0;
+                                                    padding: 5px 10px;
+                                                  " valign="top" align="left"></td>
+                                                                                            <td style="
+                                                    word-break: break-word;
+                                                    -webkit-hyphens: none;
+                                                    -ms-hyphens: none;
+                                                    hyphens: none;
+                                                    border-collapse: collapse !important;
+                                                    color: #2B2725;
+                                                    font-family:  'Intervogue';
+                                                    font-weight: normal;
+                                                    line-height: 19px;
+                                                    font-size: 14px;
+                                                    margin: 0;
+                                                    padding: 5px 10px;
+                                                  " valign="top" align="left"></td>
+
+                                                                                            <td style="
+                                                    word-break: keep-all;
+                                                    -webkit-hyphens: none;
+                                                    -ms-hyphens: none;
+                                                    hyphens: none;
+                                                    border-collapse: collapse !important;
+                                                    color: #2B2725;
+                                                    font-family:  'Intervogue';
+                                                    font-weight: 500;
+                                                    line-height: 15px;
+                                                    font-size: 12px;
+                                                    letter-spacing: 0.02em;
+                                                    margin: 0;
+                                                    padding: 11px 10px 0px 10px;
+                                                  " valign="top" align="right"> {{ subtotal_price | money }}
+                                                                                            </td>
+                                                                                        </tr> {% else %} <tr
+                                                                                            class="row-compact border-top"
+                                                                                            style="
+                                                  vertical-align: top;
+                                                  border-top-width: 1px;
+                                                  border-top-color: #2B2725;
+                                                  border-top-style: solid;
+                                                  padding: 0;
+                                                " align="left">
+                                                                                            <td style="
+                                                    word-break: break-word;
+                                                    -webkit-hyphens: none;
+                                                    -ms-hyphens: none;
+                                                    hyphens: none;
+                                                    border-collapse: collapse !important;
+                                                    color: #2B2725;
+                                                    font-family:  'Intervogue';
+                                                    line-height: 19px;
+                                                    font-size: 14px;
+                                                    margin: 0;
+                                                    padding: 10px;
+                                                  " valign="top" align="left"></td>
+                                                                                            <td style="
+                                                    word-break: break-word;
+                                                    -webkit-hyphens: none;
+                                                    -ms-hyphens: none;
+                                                    hyphens: none;
+                                                    border-collapse: collapse !important;
+                                                    color: #2B2725;
+                                                    font-family:  'Intervogue';
+                                                    font-weight: normal;
+                                                    line-height: 19px;
+                                                    font-size: 14px;
+                                                    margin: 0;
+                                                    padding: 5px 10px;
+                                                  " valign="top" align="left"></td>
+
+                                                                                            <td class="text-bold" style="
+                                                    word-break: keep-all;
+                                                    -webkit-hyphens: none;
+                                                    -ms-hyphens: none;
+                                                    hyphens: none;
+                                                    border-collapse: collapse !important;
+                                                    color: #2B2725;
+                                                    font-family:  'Intervogue';
+                                                    font-weight: 400;
+                                                    line-height: 15px;
+                                                    font-size: 12px;
+                                                    margin: 0;
+                                                    padding: 11px 10px 0px 10px;
+                                                    text-transform: uppercase;
+                                                  " valign="top" align="left"> Subtotal </td>
+                                                                                            <td style="
+                                                    word-break: break-word;
+                                                    -webkit-hyphens: none;
+                                                    -ms-hyphens: none;
+                                                    hyphens: none;
+                                                    border-collapse: collapse !important;
+                                                    color: #2B2725;
+                                                    font-family:  'Intervogue';
+                                                    font-weight: normal;
+                                                    line-height: 19px;
+                                                    font-size: 14px;
+                                                    margin: 0;
+                                                    padding: 5px 10px;
+                                                  " valign="top" align="left"></td>
+                                                                                            <td style="
+                                                    word-break: break-word;
+                                                    -webkit-hyphens: none;
+                                                    -ms-hyphens: none;
+                                                    hyphens: none;
+                                                    border-collapse: collapse !important;
+                                                    color: #2B2725;
+                                                    font-family:  'Intervogue';
+                                                    font-weight: normal;
+                                                    line-height: 19px;
+                                                    font-size: 14px;
+                                                    margin: 0;
+                                                    padding: 5px 10px;
+                                                  " valign="top" align="left"></td>
+
+                                                                                            <td style="
+                                                    word-break: keep-all;
+                                                    -webkit-hyphens: none;
+                                                    -ms-hyphens: none;
+                                                    hyphens: none;
+                                                    border-collapse: collapse !important;
+                                                    color: #2B2725;
+                                                    font-family:  'Intervogue';
+                                                    font-weight: 500;
+                                                    line-height: 15px;
+                                                    font-size: 12px;
+                                                    letter-spacing: 0.02em;
+                                                    margin: 0;
+                                                    padding: 11px 10px 0px 10px;
+                                                  " valign="top" align="right"> {{ subtotal_price | money }}
+                                                                                            </td>
+                                                                                        </tr> {% endif %}
+                                                                                        <tr class="row-compact"
+                                                                                            style="vertical-align: top; padding: 0"
+                                                                                            align="left">
+                                                                                            <td style="
+                                                    word-break: keep-all;
+                                                    -webkit-hyphens: none;
+                                                    -ms-hyphens: none;
+                                                    hyphens: none;
+                                                    border-collapse: collapse !important;
+                                                    color: #2B2725;
+                                                    font-family:  'Intervogue';
+                                                    font-weight: normal;
+                                                    line-height: 19px;
+                                                    font-size: 14px;
+                                                    margin: 0;
+                                                    padding: 10px;
+                                                  " valign="top" align="left"></td>
+                                                                                            <td style="
+                                                    word-break: keep-all;
+                                                    -webkit-hyphens: none;
+                                                    -ms-hyphens: none;
+                                                    hyphens: none;
+                                                    border-collapse: collapse !important;
+                                                    color: #2B2725;
+                                                    font-family:  'Intervogue';
+                                                    font-weight: normal;
+                                                    line-height: 19px;
+                                                    font-size: 14px;
+                                                    margin: 0;
+                                                    padding: 5px 10px;
+                                                  " valign="top" align="left"></td>
+
+                                                                                            <td class="text-bold" style="
+                                                    word-break: keep-all;
+                                                    -webkit-hyphens: none;
+                                                    -ms-hyphens: none;
+                                                    hyphens: none;
+                                                    border-collapse: collapse !important;
+                                                    color: #2B2725;
+                                                    font-family:  'Intervogue';
+                                                    font-weight: 400;
+                                                    line-height: 15px;
+                                                    font-size: 12px;
+                                                    letter-spacing: 0.02em;
+                                                    margin: 0;
+                                                    padding: 11px 10px 0px 10px;
+                                                    text-transform: uppercase;
+                                                  " valign="top" align="left"> Shipping </td>
+                                                                                            <td style="
+                                                    word-break: keep-all;
+                                                    -webkit-hyphens: none;
+                                                    -ms-hyphens: none;
+                                                    hyphens: none;
+                                                    border-collapse: collapse !important;
+                                                    color: #2B2725;
+                                                    font-family:  'Intervogue';
+                                                    font-weight: normal;
+                                                    line-height: 19px;
+                                                    font-size: 14px;
+                                                    margin: 0;
+                                                    padding: 5px 10px;
+                                                  " valign="top" align="left"></td>
+                                                                                            <td style="
+                                                    word-break: keep-all;
+                                                    -webkit-hyphens: none;
+                                                    -ms-hyphens: none;
+                                                    hyphens: none;
+                                                    border-collapse: collapse !important;
+                                                    color: #2B2725;
+                                                    font-family:  'Intervogue';
+                                                    font-weight: normal;
+                                                    line-height: 19px;
+                                                    font-size: 14px;
+                                                    margin: 0;
+                                                    padding: 5px 10px;
+                                                  " valign="top" align="left"></td>
+
+                                                                                            <td style="
+                                                    word-break: keep-all;
+                                                    -webkit-hyphens: none;
+                                                    -ms-hyphens: none;
+                                                    hyphens: none;
+                                                    border-collapse: collapse !important;
+                                                    color: #2B2725;
+                                                    font-family:  'Intervogue';
+                                                    font-weight: 500;
+                                                    line-height: 15px;
+                                                    font-size: 12px;
+                                                    letter-spacing: 0.02em;
+                                                    margin: 0;
+                                                    padding: 11px 10px 0px 10px;
+                                                  " valign="top" align="right"> {{ shipping_price | money }}
+                                                                                            </td>
+                                                                                        </tr>
+
+                                                                                        <tr class="row-compact"
+                                                                                            style="vertical-align: top; padding: 0"
+                                                                                            align="left">
+                                                                                            <td style="
+                                                    word-break: keep-all;
+                                                    -webkit-hyphens: none;
+                                                    -ms-hyphens: none;
+                                                    hyphens: none;
+                                                    border-collapse: collapse !important;
+                                                    color: #2B2725;
+                                                    font-family:  'Intervogue';
+                                                    font-weight: normal;
+                                                    line-height: 19px;
+                                                    font-size: 14px;
+                                                    margin: 0;
+                                                    padding: 10px;
+                                                  " valign="top" align="left"></td>
+                                                                                            <td style="
+                                                    word-break: keep-all;
+                                                    -webkit-hyphens: none;
+                                                    -ms-hyphens: none;
+                                                    hyphens: none;
+                                                    border-collapse: collapse !important;
+                                                    color: #2B2725;
+                                                    font-family:  'Intervogue';
+                                                    font-weight: normal;
+                                                    line-height: 19px;
+                                                    font-size: 14px;
+                                                    margin: 0;
+                                                    padding: 5px 10px;
+                                                  " valign="top" align="left"></td>
+
+                                                                                            <td class="text-bold" style="
+                                                    word-break: keep-all;
+                                                    -webkit-hyphens: none;
+                                                    -ms-hyphens: none;
+                                                    hyphens: none;
+                                                    border-collapse: collapse !important;
+                                                    color: #2B2725;
+                                                    font-family:  'Intervogue';
+                                                    font-weight: 400;
+                                                    line-height: 15px;
+                                                    font-size: 12px;
+                                                    letter-spacing: 0.02em;
+                                                    margin: 0;
+                                                    padding: 11px 10px 18px 10px;
+                                                    text-transform: uppercase;
+                                                  " valign="top" align="left"> TAXES </td>
+                                                                                            <td style="
+                                                    word-break: keep-all;
+                                                    -webkit-hyphens: none;
+                                                    -ms-hyphens: none;
+                                                    hyphens: none;
+                                                    border-collapse: collapse !important;
+                                                    color: #2B2725;
+                                                    font-family:  'Intervogue';
+                                                    font-weight: normal;
+                                                    line-height: 19px;
+                                                    font-size: 14px;
+                                                    margin: 0;
+                                                    padding: 5px 10px;
+                                                  " valign="top" align="left"></td>
+                                                                                            <td style="
+                                                    word-break: keep-all;
+                                                    -webkit-hyphens: none;
+                                                    -ms-hyphens: none;
+                                                    hyphens: none;
+                                                    border-collapse: collapse !important;
+                                                    color: #2B2725;
+                                                    font-family:  'Intervogue';
+                                                    font-weight: normal;
+                                                    line-height: 19px;
+                                                    font-size: 14px;
+                                                    margin: 0;
+                                                    padding: 5px 10px;
+                                                  " valign="top" align="left"></td>
+
+                                                                                            <td style="
+                                                    word-break: keep-all;
+                                                    -webkit-hyphens: none;
+                                                    -ms-hyphens: none;
+                                                    hyphens: none;
+                                                    border-collapse: collapse !important;
+                                                    color: #2B2725;
+                                                    font-family:  'Intervogue';
+                                                    font-weight: 500;
+                                                    line-height: 15px;
+                                                    font-size: 12px;
+                                                    letter-spacing: 0.02em;
+                                                    margin: 0;
+                                                    padding: 11px 10px 0px 10px;
+                                                  " valign="top" align="right"> {{ tax_price | money }}
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr class="border-bottom" style="
+                                                  vertical-align: top;
+                                                  
+                                                  
+                                                  padding: 0;
+                                                " align="left">
+                                                                                            <td style="
+                                                    word-break: keep-all;
+                                                    -webkit-hyphens: none;
+                                                    -ms-hyphens: none;
+                                                    hyphens: none;
+                                                    border-collapse: collapse !important;
+                                                    color: #2B2725;
+                                                    font-family:  'Intervogue';
+                                                    font-weight: normal;
+                                                    line-height: 19px;
+                                                    font-size: 14px;
+                                                    margin: 0;
+                                                    padding: 10px;
+                                                  " valign="top" align="left"></td>
+                                                                                            <td style="
+                                                    word-break: keep-all;
+                                                    -webkit-hyphens: none;
+                                                    -ms-hyphens: none;
+                                                    hyphens: none;
+                                                    border-collapse: collapse !important;
+                                                    color: #2B2725;
+                                                    font-family:  'Intervogue';
+                                                    font-weight: normal;
+                                                    line-height: 19px;
+                                                    font-size: 14px;
+                                                    margin: 0;
+                                                    padding: 10px;
+                                                  " valign="top" align="left"></td>
+
+                                                                                            <td class="text-bold text-dark"
+                                                                                                style="
+                                                    word-break: keep-all;
+                                                    -webkit-hyphens: none;
+                                                    -ms-hyphens: none;
+                                                    hyphens: none;
+                                                    border-collapse: collapse !important;
+                                                    color: #2B2725;
+                                                    font-family:  'Intervogue';
+                                                    font-weight: 400;
+                                                    line-height: 15px;
+                                                    font-size: 12px;
+                                                    letter-spacing: 0.02em;
+                                                    margin: 0;
+                                                    padding: 11px 10px 18px 10px;
+                                                    text-transform: uppercase;
+                                                    border-top: 1px solid rgba(43, 39, 37, 0.3);
+                                                  " valign="top" align="left"> Total </td>
+                                                                                            <td style="
+                                                    word-break: keep-all;
+                                                    -webkit-hyphens: none;
+                                                    -ms-hyphens: none;
+                                                    hyphens: none;
+                                                    border-collapse: collapse !important;
+                                                    color: #2B2725;
+                                                    font-family:  'Intervogue';
+                                                    font-weight: normal;
+                                                    line-height: 19px;
+                                                    font-size: 14px;
+                                                    margin: 0;
+                                                    padding: 10px;
+                                                    border-top: 1px solid rgba(43, 39, 37, 0.3);
+                                                  " valign="top" align="left"></td>
+                                                                                            <td style="
+                                                    word-break: keep-all;
+                                                    -webkit-hyphens: none;
+                                                    -ms-hyphens: none;
+                                                    hyphens: none;
+                                                    border-collapse: collapse !important;
+                                                    color: #2B2725;
+                                                    font-family:  'Intervogue';
+                                                    font-weight: normal;
+                                                    line-height: 19px;
+                                                    font-size: 14px;
+                                                    margin: 0;
+                                                    padding: 10px;
+                                                    border-top: 1px solid rgba(43, 39, 37, 0.3);
+                                                  " valign="top" align="left"></td>
+
+                                                                                            <td style="
+                                                    word-break: keep-all;
+                                                    -webkit-hyphens: none;
+                                                    -ms-hyphens: none;
+                                                    hyphens: none;
+                                                    border-collapse: collapse !important;
+                                                    color: #2B2725;
+                                                    font-family:  'Intervogue';
+                                                    font-weight: 500;
+                                                    line-height: 15px;
+                                                    font-size: 12px;
+                                                    letter-spacing: 0.02em;
+                                                    margin: 0;
+                                                    padding: 11px 10px 0px 10px;
+                                                    border-top: 1px solid rgba(43, 39, 37, 0.3);
+                                                  " valign="top" align="right"> {{ total_price | money_with_currency }}
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                    </tbody>
+                                                                                </table>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="section border-bottom" style="
+                                          margin: 15px 0;
+                                          padding: 15px 0;
+                                        ">
+                                                                            <p class="text-dark" style="
+                                            color: #2B2725;
+                                            font-family:  'Silvana';
+                                            font-weight: 400;
+                                            font-style: italic;
+                                            line-height: 34px;
+                                            font-size: 16px;
+                                            letter-spacing: -0.02em;
+                                            margin: 0 0 10px;
+                                            padding: 0;
+                                          " align="left"> Customer information:
+                                                                            </p>
+                                                                            <p class="text-dark" style="
+                                            color: #2B2725;
+                                            font-family:  'Intervogue';
+                                            font-weight: 400;
+                                            font-style: Normal;
+                                            line-height: 34px;
+                                            font-size: 12px;
+                                            letter-spacing: -0.02em;
+                                            margin: 0 0 10px;
+                                            padding: 0;
+                                          " align="left"><span style="text-transform: uppercase; font-weight: 500; padding-right: 20px;">email
+                                                                                    address: </span><a
+                                                                                    href="mailto:{{ customer.email }}"
+                                                                                    style="color: #2B2725;">{{
+                                                                                    customer.email }}</a>
+                                                                            </p>
+                                                                            <table class="padded-table" style="
+                                            border-spacing: 0;
+                                            border-collapse: collapse;
+                                            vertical-align: top;
+                                            text-align: left;
+                                            width: 100%;
+                                            padding: 0;
+                                            border-top: 1px solid rgba(43, 39, 37, 0.3);
+                                          ">
+                                                                                <tbody>
+                                                                                    <tr style="vertical-align: top; padding: 0"
+                                                                                        align="left">
+                                                                                        <td style="
+                                                  word-break: break-word;
+                                                  -webkit-hyphens: none;
+                                                  -ms-hyphens: none;
+                                                  hyphens: none;
+                                                  border-collapse: collapse !important;
+                                                  color: #2B2725;
+                                                  font-family:  'Intervogue';
+                                                  font-weight: 500;
+                                                  line-height: 16px;
+                                                  font-size: 12px;
+                                                  letter-spacing: 0.02em;
+                                                  margin: 0;
+                                                  padding: 10px;
+                                                  padding-left: 0px;
+                                                " valign="top" align="left">
+                                                                                            <span class="text-bold"
+                                                                                                style="font-weight: bold; text-transform: uppercase;">Delivery
+                                                                                                address:</span>{{
+                                                                                            shipping_address |
+                                                                                            format_address }}
+                                                                                        </td>
+                                                                                        <td style="
+                                                  word-break: break-word;
+                                                  -webkit-hyphens: none;
+                                                  -ms-hyphens: none;
+                                                  hyphens: none;
+                                                  border-collapse: collapse !important;
+                                                  color: #2B2725;
+                                                  font-family:  'Intervogue';
+                                                  font-weight: 500;
+                                                  line-height: 15px;
+                                                  font-size: 12px;
+                                                  margin: 0;
+                                                  padding: 10px;
+                                                " valign="top" align="left">
+                                                                                            <span class="text-bold"
+                                                                                                style="font-weight: bold; text-transform: uppercase;">Billing
+                                                                                                address:</span>{{
+                                                                                            billing_address |
+                                                                                            format_address }}
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr style="vertical-align: top; padding: 0; border-top: 1px solid rgba(43, 39, 37, 0.3);"
+                                                                                        align="left">
+                                                                                        <td style="
+                                                  word-break: break-word;
+                                                  -webkit-hyphens: none;
+                                                  -ms-hyphens: none;
+                                                  hyphens: none;
+                                                  border-collapse: collapse !important;
+                                                  color: #2B2725;
+                                                  font-family:  'Intervogue';
+                                                  font-weight: 400;
+                                                  line-height: 15px;
+                                                  font-size: 12px;
+                                                  margin: 0;
+                                                  padding: 16px 0px 13px 0px;
+
+                                                " valign="top" align="left">
+                                                                                            <span class="text-bold"
+                                                                                                style="font-weight: bold; padding-bottom: 13px; text-transform: uppercase;">Shipping
+                                                                                                method:</span>
+                                                                                            <p>{{ shipping_method.title
+                                                                                                }}</p>
+                                                                                        </td>
+                                                                                        <td style="
+                                                  word-break: break-word;
+                                                  -webkit-hyphens: none;
+                                                  -ms-hyphens: none;
+                                                  hyphens: none;
+                                                  border-collapse: collapse !important;
+                                                  color: #2B2725;
+                                                  font-family:  'Intervogue';
+                                                  font-weight: 400;
+                                                  line-height: 15px;
+                                                  font-size: 12px;
+                                                  margin: 0;
+                                                  padding: 16px 0px 13px 10px;
+                                                " valign="top" align="left">
+                                                                                            <span class="text-bold"
+                                                                                                style="font-weight: bold;padding-bottom: 13px; text-transform: uppercase;">Payment
+                                                                                                method</span>
+                                                                                            <p>Visa ending with 1234</p>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </div>
+
+
+                                                                        <table class="row row-29" align="center"
+                                                                            width="100%" border="0" cellpadding="0"
+                                                                            cellspacing="0" role="presentation"
+                                                                            style="mso-table-lspace: 0pt; mso-table-rspace: 0pt">
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td>
+                                                                                        <table class="row-content stack"
+                                                                                            align="center" border="0"
+                                                                                            cellpadding="0"
+                                                                                            cellspacing="0"
+                                                                                            role="presentation" style="
+                                                mso-table-lspace: 0pt;
+                                                mso-table-rspace: 0pt;
+                                                background-color: white;
+
+                                                margin-bottom: 20px;
+                                              " width="">
+                                                                                            <tbody>
+                                                                                                <tr>
+                                                                                                    <td class="column column-1"
+                                                                                                        width="100%"
+                                                                                                        style="
+                                                      mso-table-lspace: 0pt;
+                                                      mso-table-rspace: 0pt;
+                                                      font-weight: 400;
+                                                      text-align: left;
+                                                      vertical-align: top;
+                                                      padding-top: 5px;
+                                                      padding-bottom: 0px;
+                                                      border-top: 0px;
+                                                      border-right: 0px;
+                                                      border-bottom: 0px;
+                                                      border-left: 0px;
+                                                    ">
+                                                                                                        <table
+                                                                                                            class="heading_block block-1"
+                                                                                                            width="100%"
+                                                                                                            border="0"
+                                                                                                            cellpadding="0"
+                                                                                                            cellspacing="0"
+                                                                                                            role="presentation"
+                                                                                                            style="
+                                                        mso-table-lspace: 0pt;
+                                                        mso-table-rspace: 0pt;
+                                                      ">
+                                                                                                            <tr>
+                                                                                                                <td class="pad"
+                                                                                                                    style="text-align: center; width: 700px;">
+                                                                                                                    <a href="https://ninetypercent.com/"
+                                                                                                                        target="_blank">
+                                                                                                                        <img class="icon"
+                                                                                                                            src="https://mcusercontent.com/98961a524d0501bca9aa0f0ec/images/401335a2-a885-6f13-e450-7f021f92485d.png"
+                                                                                                                            alt="Company Logo"
+                                                                                                                            height=""
+                                                                                                                            width="700px"
+                                                                                                                            align="center"
+                                                                                                                            style="
+                                                          display: block;
+                                                          height: auto;
+                                                          margin: 0 auto;
+                                                          border: 0;
+                                                      
+                                                        " />
+                                                                                                                    </a>
+
+                                                                                                                </td>
+                                                                                                            </tr>
+                                                                                                        </table>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                            </tbody>
+                                                                                        </table>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+
+                                                                        <table class="row row-30" align="center"
+                                                                            width="100%" border="0" cellpadding="0"
+                                                                            cellspacing="0" role="presentation"
+                                                                            style="mso-table-lspace: 0pt; mso-table-rspace: 0pt">
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td>
+                                                                                        <table class="row-content stack"
+                                                                                            align="center" border="0"
+                                                                                            cellpadding="0"
+                                                                                            cellspacing="0"
+                                                                                            role="presentation" style="
+                                                                                  mso-table-lspace: 0pt;
+                                                                                  mso-table-rspace: 0pt;
+                                                                                  background-color: white;
+                                                                                  border-radius: 0;
+                                                                                  color: #000000;
+                                                                                  width: 600px;
+                                                                                  margin-bottom: 7px;
+                                                                                " width="600">
+                                                                                            <tbody>
+                                                                                                <tr>
+                                                                                                    <td class="column column-1"
+                                                                                                        width="100%"
+                                                                                                        style="
+                                                                                        mso-table-lspace: 0pt;
+                                                                                        mso-table-rspace: 0pt;
+                                                                                        font-weight: 400;
+                                                                                        text-align: left;
+                                                                                        vertical-align: top;
+                                                                                        padding-top: 5px;
+                                                                                        padding-bottom: 5px;
+                                                                                      ">
+                                                                                                        <table
+                                                                                                            class="social_block block-1"
+                                                                                                            width="100%"
+                                                                                                            border="0"
+                                                                                                            cellpadding="0"
+                                                                                                            cellspacing="0"
+                                                                                                            role="presentation"
+                                                                                                            style="
+                                                                                          mso-table-lspace: 0pt;
+                                                                                          mso-table-rspace: 0pt;
+                                                                                        ">
+                                                                                                            <tr>
+                                                                                                                <td class="pad"
+                                                                                                                    style="
+                                                                                              text-align: center;
+                                                                                              padding-right: 0px;
+                                                                                              padding-left: 0px;
+                                                                                            ">
+                                                                                                                    <div class="alignment"
+                                                                                                                        style="text-align: center">
+                                                                                                                        <table
+                                                                                                                            class="social-table"
+                                                                                                                            width="70px"
+                                                                                                                            border="0"
+                                                                                                                            cellpadding="0"
+                                                                                                                            cellspacing="0"
+                                                                                                                            role="presentation"
+                                                                                                                            style="
+                                                                                                  mso-table-lspace: 0pt;
+                                                                                                  mso-table-rspace: 0pt;
+                                                                                                  display: flex;
+                                                                                                  justify-content: center;
+                                                                                                  align-items: center;
+                                                                                                  margin: auto;
+                                                                                                  width: 65px;
+                                                                                                ">
+                                                                                                                            <tr>
+                                                                                                                                <td
+                                                                                                                                    style="padding-right: 4px;">
+                                                                                                                                    <a href="https://www.instagram.com/ninety_percent/"
+                                                                                                                                        target="_blank"><img
+                                                                                                                                            src="https://mcusercontent.com/98961a524d0501bca9aa0f0ec/images/42f839bb-091a-90dd-c239-58bc2baa2cc4.png"
+                                                                                                                                            width="36px"
+                                                                                                                                            height=""
+                                                                                                                                            alt="Instagram"
+                                                                                                                                            title="instagram"
+                                                                                                                                            style="
+                                                                                                          display: block;
+                                                                                                          height: auto;
+                                                                                                          border: 0;
+                                                                                                          width: 36px;
+                                                                                                        " /></a>
+                                                                                                                                </td>
+                                                                                                                                <td
+                                                                                                                                    style="padding-left: 4px;">
+                                                                                                                                    <a href="https://www.facebook.com/ninetypercentlabel/"
+                                                                                                                                        target="_blank"><img
+                                                                                                                                            src="https://mcusercontent.com/98961a524d0501bca9aa0f0ec/images/27520aa4-7b6d-a89d-e2ac-4210dfbcd6d6.png"
+                                                                                                                                            width="20px"
+                                                                                                                                            height=""
+                                                                                                                                            alt="Facebook"
+                                                                                                                                            title="facebook"
+                                                                                                                                            style="
+                                                                                                          display: block;
+                                                                                                          height: auto;
+                                                                                                          border: 0;
+                                                                                                          width: 20px;
+                                                                                                        " /></a>
+                                                                                                                                </td>
+                                                                                                                            </tr>
+                                                                                                                        </table>
+                                                                                                                    </div>
+                                                                                                                </td>
+                                                                                                            </tr>
+                                                                                                        </table>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                            </tbody>
+                                                                                        </table>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+
+                                                               
+                                                                        <div style="background-color:transparent;">
+                                                                            <div class="block-grid" style="Margin: 0 auto; min-width: 320px; max-width: 600px; overflow-wrap: break-word; word-wrap: break-word; word-break: break-word; background-color: transparent;">
+                                                                                <div style="border-collapse: collapse;display: table;width: 100%;background-color:transparent;">
+                                                                                    <!--[if (mso)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:transparent;"><tr><td align="center"><table cellpadding="0" cellspacing="0" border="0" style="width:600px"><tr class="layout-full-width" style="background-color:transparent"><![endif]--><!--[if (mso)|(IE)]><td align="center" width="600" style="background-color:transparent;width:600px; border-top: 0px solid transparent; border-left: 0px solid transparent; border-bottom: 0px solid transparent; border-right: 0px solid transparent;" valign="top"><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding-right: 0px; padding-left: 0px; padding-top:5px; padding-bottom:5px;"><![endif]-->
+                                                                                    <div class="col num12" style="min-width: 320px; max-width: 600px; display: table-cell; vertical-align: top; width: 600px;">
+                                                                                        <div style="width:100% !important;">
+                                                                                            <!--[if (!mso)&(!IE)]><!-->
+                                                                                            <div style="border-top:0px solid transparent; border-left:0px solid transparent; border-bottom:0px solid transparent; border-right:0px solid transparent; padding-top:5px; padding-bottom:5px; padding-right: 0px; padding-left: 0px;">
+                                                                                                <!--<![endif]--><!--[if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding-right: 10px; padding-left: 10px; padding-top: 10px; padding-bottom: 10px; font-family: Arial, sans-serif"><![endif]-->
+                                                                                                <div style="color: #2B2725;font-family:'Intervogue';line-height:18px;padding-top:10px;padding-right:10px;padding-bottom:10px;padding-left:10px;">
+                                                                                                    <div style="line-height: 18px; font-size: 12px; color: #2B2725; font-family: 'Intervogue'; mso-line-height-alt: 14px; text-transform: uppercase;">
+                                                                                                        <p style="font-size: 12px; line-height: 18px; word-break: break-word; text-align: center; mso-line-height-alt: 17px; margin: 0;text-transform: uppercase;">
+                                                                                                            110-112 Parkway, Camden, London NW1  7AN<br>
+                                                                                                            <a  href="mailto:hello@ninetypercent.com"  style="color: #2B2725;"  title="Mail Us"  target="_blank">hello@ninetypercent.com</a><br>
+                                                                                                            <span>Call us:</span>
+                                                                                                            <a href="tel:+443300010628" style="color: #2B2725;" title="Call Us" target="_blank">+44 33 0001 0628</a>
+                                                                                                            <br>Monday to friday 9am - 6pm GMT
+                                                                                                        </p>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <!--[if mso]></td></tr></table><![endif]--><!--[if (!mso)&(!IE)]><!-->
+                                                                                            </div><!--<![endif]-->
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <!--[if (mso)|(IE)]></td></tr></table><![endif]--><!--[if (mso)|(IE)]></td></tr></table></td></tr></table><![endif]-->
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+
+
+
+                                                                    </td>
+                                                                    <td class="expander" style="
+                                        word-break: break-word;
+                                        -webkit-hyphens: none;
+                                        -ms-hyphens: none;
+                                        hyphens: none;
+                                        border-collapse: collapse !important;
+                                        visibility: hidden;
+                                        width: 0px;
+                                        color: #2B2725;
+                                        font-family:  'Intervogue';
+                                        font-weight: normal;
+                                        line-height: 19px;
+                                        font-size: 14px;
+                                        margin: 0;
+                                        padding: 0;
+                                      " valign="top" align="left"></td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <!-- <table class="row footer border-top" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 100%; position: relative; display: block; border-top-width: 1px; border-top-color: #2B2725; border-top-style: solid; padding: 20px 0;"><tbody><tr style="vertical-align: top; padding: 0;" align="left"><td class="wrapper last" style="word-break: break-word; -webkit-hyphens: none; -ms-hyphens: none; hyphens: none; border-collapse: collapse !important; position: relative; color: #2B2725; font-family: Helvetica, Arial, sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0;" valign="top" align="left"><table class="twelve columns" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 700px; margin: 0 auto; padding: 0;"><tbody><tr style="vertical-align: top; padding: 0;" align="left"><td class="footer__content text-dark" style="word-break: break-word; -webkit-hyphens: none; -ms-hyphens: none; hyphens: none; border-collapse: collapse !important; color: #000; font-family: Helvetica, Arial, sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0;" valign="top" align="center"><a class="text-dark" href="{{shop.url}}" style="color: #000; text-decoration: none;">{{shop.url}}</a><br>110-112 Parkway, Camden. NW17AN London
+    <br>hello@ninetypercent.com
+    </td><td class="expander" style="word-break: break-word; -webkit-hyphens: none; -ms-hyphens: none; hyphens: none; border-collapse: collapse !important; visibility: hidden; width: 0px; color: #2B2725; font-family: Helvetica, Arial, sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0;" valign="top" align="left"></td></tr></tbody></table></td></tr></tbody></table> -->
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </center>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
